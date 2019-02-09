@@ -1,6 +1,18 @@
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-preview">
+            {{#each posts}}
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">
+                        {{this.title}}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{this.summary}}
+                    </h3>
+                </a>
+            </div>
+            {{/each}}
             <a href="post.html">
                 <h2 class="post-title">
                     Man must explore, and this is exploration at its greatest
